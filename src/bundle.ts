@@ -910,6 +910,9 @@ export const commands = {
       expo,
       rncli,
       disableHermes,
+      versionNameInfo,
+      description,
+      metaInfo,
     } = translateOptions({
       ...options,
       platform,
@@ -954,6 +957,9 @@ export const commands = {
         args: [realOutput],
         options: {
           platform,
+          name: versionNameInfo,
+          description,
+          metaInfo,
         },
       });
       if (isSentry) {

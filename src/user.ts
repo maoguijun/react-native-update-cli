@@ -30,4 +30,7 @@ export const commands = {
       }
     }
   },
+  info: async () => {
+    console.log("这是元象前端组魔改的版本:https://github.com/maoguijun/react-native-update-cli");
+  }
 };
